@@ -20,7 +20,7 @@ services:
     image: "mysql"
     profiles: 
     # if  profiles set it define it not run that particular image by default you should run it explicitly
-    # 'docker compose --profile enabledb up -d' -> using this command you run it 
+    # 'docker compose --profile enabledb up -d' -> using this command you can run it 
         - enabledb
 networks:
   my_network:
