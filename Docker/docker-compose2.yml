@@ -1,0 +1,19 @@
+services:
+    app:
+      build: 
+        dockerfile: Dockerfile # build image from dockerfile
+      # ports: 
+      #  - "8080:80"
+      # networks: 
+      #   - my_network
+      depends_on:
+#       # - db
+        - rcache
+    web:
+      image: "nginx"
+    rcache:
+      image: "erick2113/radis"
+     # ports:
+    #   - "6379:6379"
+      networks: 
+        - my_network
