@@ -1,0 +1,20 @@
+# docker compose -f docker-compose.dev.yml up -d -> The command docker compose -f docker-compose.dev.yml up -d is used to start services defined in the docker-compose.dev.yml file
+
+
+services:
+  web:
+    image: "nginx"
+    ports: 
+      - "8080:80"
+    networks: 
+      - my_network
+
+  rcache:
+    image: "erick2113/radis"
+    # ports:
+    #   - "6379:6379"
+    networks: 
+      - my_network
+networks:
+  my_network:
+    driver: bridge
