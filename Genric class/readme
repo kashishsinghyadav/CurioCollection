@@ -1,9 +1,0 @@
-what is the cons of not having genrics
--> No type safety
--> mannual casting 
--> No compile time checking 
-
-These issues can be solved by Generics
-
-genrics type allow you to define a class ,method or interface with placeholder or we can say type parameter for the
-data types they will work with
